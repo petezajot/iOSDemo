@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105" y="-34"/>
+        </scene>
+        <!--Artists List View Controller-->
+        <scene sceneID="1GT-yZ-aOZ">
+            <objects>
+                <viewController storyboardIdentifier="artistsListStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fOw-MC-tkz" customClass="ArtistsListViewController" customModule="TestTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jDY-55-fwM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="agf-mJ-haH">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kbe-xw-Gug"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="agf-mJ-haH" firstAttribute="trailing" secondItem="Kbe-xw-Gug" secondAttribute="trailing" id="4MS-0E-CLq"/>
+                            <constraint firstItem="agf-mJ-haH" firstAttribute="centerX" secondItem="jDY-55-fwM" secondAttribute="centerX" id="9Pr-kr-054"/>
+                            <constraint firstItem="agf-mJ-haH" firstAttribute="leading" secondItem="Kbe-xw-Gug" secondAttribute="leading" id="9mE-Z1-2KI"/>
+                            <constraint firstItem="agf-mJ-haH" firstAttribute="centerY" secondItem="jDY-55-fwM" secondAttribute="centerY" id="JVB-aw-l72"/>
+                            <constraint firstAttribute="bottom" secondItem="agf-mJ-haH" secondAttribute="bottom" id="SVf-1p-HyH"/>
+                            <constraint firstItem="agf-mJ-haH" firstAttribute="top" secondItem="Kbe-xw-Gug" secondAttribute="top" id="m9j-ZE-Uqd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="uiTable" destination="agf-mJ-haH" id="Qel-Aq-wv9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="avW-mK-qvr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078.6259541984732" y="-35.211267605633807"/>
+        </scene>
+        <!--Artist Details View Controller-->
+        <scene sceneID="rBm-lZ-oP0">
+            <objects>
+                <viewController storyboardIdentifier="artistDetailsStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5Ho-0o-XwL" customClass="ArtistDetailsViewController" customModule="TestTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cus-ZP-e78">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZYz-PN-ecb">
+                                <rect key="frame" x="16" y="59" width="361" height="204"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EG4-Aj-JQg">
+                                <rect key="frame" x="16" y="271" width="361" height="547"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMx-Ym-ETo">
+                                        <rect key="frame" x="8" y="8" width="345" height="531"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="yI0-R9-NC5"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="nxs-t6-h4c"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Az7-ja-uRD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Az7-ja-uRD" firstAttribute="trailing" secondItem="ZYz-PN-ecb" secondAttribute="trailing" constant="16" id="0sB-jc-0vJ"/>
+                            <constraint firstItem="ZYz-PN-ecb" firstAttribute="centerX" secondItem="cus-ZP-e78" secondAttribute="centerX" id="1ga-2g-d6s"/>
+                            <constraint firstItem="EG4-Aj-JQg" firstAttribute="centerX" secondItem="cus-ZP-e78" secondAttribute="centerX" id="8YK-Gl-9Fk"/>
+                            <constraint firstItem="Az7-ja-uRD" firstAttribute="trailing" secondItem="EG4-Aj-JQg" secondAttribute="trailing" constant="16" id="ETk-bI-b1m"/>
+                            <constraint firstItem="EG4-Aj-JQg" firstAttribute="bottom" secondItem="Az7-ja-uRD" secondAttribute="bottom" id="P1e-Jv-dXU"/>
+                            <constraint firstItem="ZYz-PN-ecb" firstAttribute="leading" secondItem="Az7-ja-uRD" secondAttribute="leading" constant="16" id="jFt-Sf-jV1"/>
+                            <constraint firstItem="EG4-Aj-JQg" firstAttribute="top" secondItem="ZYz-PN-ecb" secondAttribute="bottom" constant="8" symbolic="YES" id="jNU-FD-dnf"/>
+                            <constraint firstItem="ZYz-PN-ecb" firstAttribute="top" secondItem="Az7-ja-uRD" secondAttribute="top" id="utA-YZ-Keq"/>
+                            <constraint firstItem="EG4-Aj-JQg" firstAttribute="leading" secondItem="Az7-ja-uRD" secondAttribute="leading" constant="16" id="w1o-j8-gVL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="artistImage" destination="ZYz-PN-ecb" id="AZx-UW-Cjf"/>
+                        <outlet property="labelBio" destination="YMx-Ym-ETo" id="Yys-8t-DlX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b2U-V2-H4l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1861.8320610687022" y="-35.211267605633807"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

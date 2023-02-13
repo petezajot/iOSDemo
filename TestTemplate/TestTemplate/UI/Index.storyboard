@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Portfolio Menu View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController restorationIdentifier="portfolioMenuStoryboard" storyboardIdentifier="portfolioMenuStoryboard" id="Y6W-OH-hqX" customClass="PortfolioMenuViewController" customModule="TestTemplate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEMO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqU-og-dOg">
+                                <rect key="frame" x="20" y="59" width="390" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="X2e-01-6mm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="221" translatesAutoresizingMaskIntoConstraints="NO" id="bdW-mk-fiK">
+                                <rect key="frame" x="10" y="147" width="410" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maps demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4P3-qV-NqW">
+                                        <rect key="frame" x="0.0" y="9.9999999999999982" width="89.666666666666671" height="20.333333333333329"/>
+                                        <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4f5-Vm-UGT">
+                                        <rect key="frame" x="310.66666666666669" y="3" width="99.333333333333314" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Go!"/>
+                                        <connections>
+                                            <action selector="presentMapsScreen:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eBW-oc-vsm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hMs-EG-rKY"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="197" translatesAutoresizingMaskIntoConstraints="NO" id="aYh-f4-FOa">
+                                <rect key="frame" x="10" y="99" width="410" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music API request" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hM-PN-wnm">
+                                        <rect key="frame" x="0.0" y="9.9999999999999982" width="137.66666666666666" height="20.333333333333329"/>
+                                        <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYG-UH-ySF">
+                                        <rect key="frame" x="334.66666666666669" y="3" width="75.333333333333314" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Go!"/>
+                                        <connections>
+                                            <action selector="presentApiRequestScreen:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="mMm-zg-2yz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="avA-MA-NPU"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wqU-og-dOg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="NM7-HS-4zx"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aYh-f4-FOa" secondAttribute="trailing" constant="10" id="RYX-J5-gf3"/>
+                            <constraint firstItem="aYh-f4-FOa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="T7V-v0-tMS"/>
+                            <constraint firstItem="aYh-f4-FOa" firstAttribute="top" secondItem="wqU-og-dOg" secondAttribute="bottom" constant="15" id="aVh-97-mfQ"/>
+                            <constraint firstItem="wqU-og-dOg" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="agI-Dj-01V"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="bdW-mk-fiK" secondAttribute="trailing" constant="10" id="bTD-wa-LFC"/>
+                            <constraint firstItem="bdW-mk-fiK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="f7p-ke-DwX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wqU-og-dOg" secondAttribute="trailing" constant="20" id="wPl-Zc-6ha"/>
+                            <constraint firstItem="bdW-mk-fiK" firstAttribute="top" secondItem="aYh-f4-FOa" secondAttribute="bottom" constant="8" symbolic="YES" id="x7H-JN-NUO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.37209302325581" y="-35.407725321888414"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
